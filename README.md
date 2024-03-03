@@ -10,7 +10,7 @@ Ce projet constitue un portofolio professionnel développé en utilisant uniquem
 
 Conçu pour la simplicité, il ne nécessite que Bootstrap et Font Awesome pour les icônes.
 
-L'interface est simple et épuré, mettant en valeur le profil.
+L'interface est simple et épurée, mettant en valeur le profil.
 
 ## Mise en place
 
