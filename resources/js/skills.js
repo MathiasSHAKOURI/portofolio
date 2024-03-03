@@ -183,7 +183,10 @@ function openModal(project) {
 
   modalProjectImage.src = project.image;
   modalProjectImage.alt = project.name + "-image";
-}
+};
+
+const closeButton = document.getElementById("projectModal");
+closeButton.addEventListener("click", closeModal);
 
 function closeModal() {
   const modal = document.getElementById("projectModal");
@@ -199,7 +202,7 @@ function closeModal() {
     modal.style.transition = "";
     modal.removeEventListener("transitionend", handler);
   });
-}
+};
 
 document.addEventListener("keydown", function(event) {
   if (event.key === "Escape" || event.keyCode === 27) {
