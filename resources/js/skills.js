@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 // Bloc Compétences
 const skills = [
     { name: "HTML", logo: "html_logo.png" },
@@ -203,4 +205,6 @@ document.addEventListener("keydown", function(event) {
   if (event.key === "Escape" || event.keyCode === 27) {
     closeModal();
   }
+});
+
 });
