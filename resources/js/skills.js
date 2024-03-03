@@ -168,6 +168,10 @@ function openModal(project) {
   const modal = document.getElementById("projectModal");
   modal.style.display = "block";
 
+  modal.offsetHeight;
+  modal.style.opacity = 1;
+  modal.style.transition = "opacity 1s";
+
   const modalProjectName = document.getElementById("modalProjectName");
   const modalProjectDescription = document.getElementById("modalProjectDescription");
   const modalProjectImage = document.getElementById("modalProjectImage");
@@ -180,7 +184,19 @@ function openModal(project) {
 }
 
 function closeModal() {
-  document.getElementById("projectModal").style.display = "none";
+  const modal = document.getElementById("projectModal");
+  modal.style.opacity = 0;
+  modal.style.transition = "opacity 1s";
+
+  modal.classList.add("closing");
+
+  modal.addEventListener("transitionend", function handler() {
+    modal.style.display = "none";
+    modal.classList.remove("open", "closing");
+    modal.style.opacity = "";
+    modal.style.transition = "";
+    modal.removeEventListener("transitionend", handler);
+  });
 }
 
 document.addEventListener("keydown", function(event) {
