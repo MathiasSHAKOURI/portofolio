@@ -1,5 +1,6 @@
 body {
   background-color: rgb(15, 15, 15);
+  transition: background-color 2s;
   font-family: "Roboto", sans-serif;
 }
 
@@ -8,6 +9,7 @@ body {
 .bloc-main-2,
 .bloc-main-3 {
   background-color: rgb(27, 31, 35);
+  transition: background-color 2s;
 }
 
 .bloc-hover-dark:hover {
