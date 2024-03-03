@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/MathiasSHAKOURI/portofolio/assets/122030473/1322ea9c-5244-4f06-a307-ac0f0422b209" />
+</p>
+
 # Portofolio
 
 ## Projet HTML/CSS/JS natif
