@@ -16,12 +16,8 @@ L'interface est simple et épuré, mettant en valeur le profil.
 
 ### Prérequis
 
-Ajouter des images dans :
-- `/resources/images/logo`
-- `/resources/images/projects`
+Ajouter votre photo de profil dans :
 - `/resources/images/photo_profil.jpg`
-
-Et modifier en conséquence pour les `logo` et `projects`, les tableaux `skills` et `projects` dans le fichier `/resources/js/skills.js`
 
 ### Installation
 
