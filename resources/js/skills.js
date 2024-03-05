@@ -43,8 +43,9 @@ const experienceContainer = document.getElementById("experienceContainer");
 
 experiences.forEach(experience => {
     const experienceElement = document.createElement("p");
+    experienceElement.style.classList = "px-3";
     experienceElement.innerHTML = `
-      <i class="fa-solid fa-building px-3 fa-lg"></i>
+      <i class="fa-solid fa-building fa-lg" style="padding-right: 1rem;"></i>
       ${experience.year} - ${experience.position} @ ${experience.company} # ${experience.client}
     `;
     experienceContainer.appendChild(experienceElement);
