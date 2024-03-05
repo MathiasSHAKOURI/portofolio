@@ -9,6 +9,7 @@ const themeIcon = document.querySelector("#theme-button i");
 const goTopButton = document.getElementById("top-button");
 const modalContent = this.documentElement.querySelector(".modal-content");
 
+
 themeButton.addEventListener("click", () => {
 
 
@@ -36,6 +37,12 @@ themeButton.addEventListener("click", () => {
 
     modalContent.style.backgroundColor = "#1b1f23"
     modalContent.style.borderColor = "#1b1f23";
+
+    const skillTextElements = document.querySelectorAll("#softSkillsContainer .col-6 div");
+    console.log(skillTextElements);
+    skillTextElements.forEach(skillElement => {
+      skillElement.style.color = "#1b1f23";
+    });
 
     isDarkTheme = true;
     return;
@@ -65,6 +72,12 @@ themeButton.addEventListener("click", () => {
 
     modalContent.style.backgroundColor = "#969696"
     modalContent.style.borderColor = "#969696";
+
+    const skillTextElements = document.querySelectorAll("#softSkillsContainer .col-6 div");
+    console.log(skillTextElements);
+    skillTextElements.forEach(skillElement => {
+      skillElement.style.color = "#969696";
+    });
 
     isDarkTheme = false;
   };

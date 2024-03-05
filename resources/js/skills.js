@@ -55,30 +55,52 @@ experiences.forEach(experience => {
 const skillsCategories = [
   {
     title: "Soft Skills",
-    skills: ["Communication", "Esprit d'équipe", "Organisé", "Adaptabilité"]
+    skills: ["Communication", "Esprit d'équipe", "Organisé", "Gestion du stress"]
   },
   {
     title: "Qualités personnelles",
-    skills: ["Gestion du stress", "Optimisme", "Bienveillance", "Orientation client"]
+    skills: ["Adaptabilité", "Optimisme", "Bienveillance", "Orientation client"]
   }
 ];
+
+// const softSkillsContainer = document.getElementById("softSkillsContainer");
+
+// skillsCategories.forEach(category => {
+//     const categoryElement = document.createElement("div");
+//     categoryElement.classList.add("col-6");
+
+//     const listElement = document.createElement("ul");
+//     category.skills.forEach(skill => {
+//         const listItemElement = document.createElement("li");
+//         listItemElement.classList.add("px-3");
+//         listItemElement.textContent = skill;
+//         listElement.appendChild(listItemElement);
+//     });
+
+// categoryElement.appendChild(listElement);
+// softSkillsContainer.appendChild(categoryElement);
+// });
 
 const softSkillsContainer = document.getElementById("softSkillsContainer");
 
 skillsCategories.forEach(category => {
-    const categoryElement = document.createElement("div");
-    categoryElement.classList.add("col-6");
+  const categoryContainer = document.createElement("div");
+  categoryContainer.classList.add("col-6");
 
-    const listElement = document.createElement("ul");
-    category.skills.forEach(skill => {
-        const listItemElement = document.createElement("li");
-        listItemElement.classList.add("px-3");
-        listItemElement.textContent = skill;
-        listElement.appendChild(listItemElement);
-    });
+  category.skills.forEach(skill => {
+      const skillElement = document.createElement("div");
+      skillElement.style.backgroundColor = "#ffffff";
+      skillElement.style.borderRadius = "50px";
+      skillElement.style.marginBottom = "10px";
+      skillElement.style.padding = "5px";
+      skillElement.style.color = "#1b1f23";
+      skillElement.style.textAlign = "center";
+      skillElement.textContent = skill;
 
-categoryElement.appendChild(listElement);
-softSkillsContainer.appendChild(categoryElement);
+      categoryContainer.appendChild(skillElement);
+  });
+
+  softSkillsContainer.appendChild(categoryContainer);
 });
 
 // Bloc Projet Git
@@ -90,10 +112,10 @@ const projects = [
       infoLink: "#",
       githubLink: "https://github.com/MathiasSHAKOURI/ofit",
       description: "OFIT est un site web dédié à la santé et au sport, développé en utilisant :<br>" +
-               "- PHP avec le framework Symfony<br>" +
-               "- JavaScript pour une expérience utilisateur dynamique<br>" +
-               "- Une base de données MariaDB pour stocker les articles, les programmes et les utilisateurs<br><br>" +
-               "Ce projet, réalisé dans le cadre de ma formation, vise à fournir une plateforme complète pour les amateurs de fitness, offrant des fonctionnalités telles que la gestion d'entraînements personnalisés, le suivi des performances, et des conseils de bien-être."
+      "- PHP avec le framework Symfony<br>" +
+      "- JavaScript pour une expérience utilisateur dynamique<br>" +
+      "- Une base de données MariaDB pour stocker les articles, les programmes et les utilisateurs<br><br>" +
+      "Ce projet, réalisé dans le cadre de ma formation, vise à fournir une plateforme complète pour les amateurs de fitness, offrant des fonctionnalités telles que la gestion d'entraînements personnalisés, le suivi des performances, et des conseils de bien-être."
     },
     { 
       name: "Portofolio",
