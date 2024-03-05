@@ -17,7 +17,7 @@ L'interface est simple et épurée, mettant en valeur le profil.
 ### Prérequis
 
 Ajouter votre photo de profil dans :
-- `/resources/images/photo_profil.jpg`
+- `/resources/images/photo_profil.webp`
 
 ### Installation
 
