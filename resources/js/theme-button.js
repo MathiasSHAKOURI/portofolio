@@ -16,34 +16,35 @@ themeButton.addEventListener("click", () => {
 
 
   if (isDarkTheme === false){
+    const colorDark = "#1b1f23";
     const svgIcon = document.querySelector('#theme-button svg');
     svgIcon.remove();
     themeIcon.remove();
     const newIconElement = document.createElement('i');
     newIconElement.className = 'fa-solid fa-circle-half-stroke me-2';
-    newIconElement.style.color = "#1b1f23";
+    newIconElement.style.color = colorDark;
     themeButton.append(newIconElement);
 
     body.style.backgroundColor = "#0f0f0f";
     bloc.forEach(element => {
-      element.style.backgroundColor = "#1b1f23"; 
+      element.style.backgroundColor = colorDark; 
     });
     blocHover.forEach(element => {
       element.classList.replace("bloc-hovered", "bloc-hover-dark");
     });
 
     goTopButton.style.color= "#fff";
-    goTopButton.style.backgroundColor = "#1b1f23";
-    goTopButton.style.borderColor = "#1b1f23";
+    goTopButton.style.backgroundColor = colorDark;
+    goTopButton.style.borderColor = colorDark;
     goTopButton.style.boxShadow = "2px 2px 10px 1px rgba(255, 255, 255, 0.3)";
 
-    modalContent.style.backgroundColor = "#1b1f23"
-    modalContent.style.borderColor = "#1b1f23";
+    modalContent.style.backgroundColor = colorDark
+    modalContent.style.borderColor = colorDark;
 
     const skillTextElements = document.querySelectorAll("#softSkillsContainer .col-6 div");
     console.log(skillTextElements);
     skillTextElements.forEach(skillElement => {
-      skillElement.style.color = "#1b1f23";
+      skillElement.style.color = colorDark;
     });
 
     footer.style.color = "#fff";
@@ -53,37 +54,38 @@ themeButton.addEventListener("click", () => {
   };
 
   if (isDarkTheme === true){
+    const colorLight = "#969696";
     const svgIcon = document.querySelector('#theme-button svg');
     svgIcon.remove();
     themeIcon.remove();
     const newIconElement = document.createElement('i');
     newIconElement.className = 'fa-solid fa-moon me-2';
-    newIconElement.style.color = "#969696";
+    newIconElement.style.color = colorLight;
     themeButton.append(newIconElement);
 
     body.style.backgroundColor = "#f8f2f9";
     bloc.forEach(element => {
-      element.style.backgroundColor = "#969696";
+      element.style.backgroundColor = colorLight;
     });
     blocHover.forEach(element => {
         element.classList.replace("bloc-hover-dark", "bloc-hovered");
     });
 
-    goTopButton.style.color= "#969696";
-    goTopButton.style.backgroundColor = "#969696";
-    goTopButton.style.borderColor = "#969696";
+    goTopButton.style.color= colorLight;
+    goTopButton.style.backgroundColor = colorLight;
+    goTopButton.style.borderColor = colorLight;
     goTopButton.style.boxShadow = "2px 2px 10px 1px rgba(15, 15, 15, 0.3)";
 
-    modalContent.style.backgroundColor = "#969696"
-    modalContent.style.borderColor = "#969696";
+    modalContent.style.backgroundColor = colorLight
+    modalContent.style.borderColor = colorLight;
 
     const skillTextElements = document.querySelectorAll("#softSkillsContainer .col-6 div");
     console.log(skillTextElements);
     skillTextElements.forEach(skillElement => {
-      skillElement.style.color = "#969696";
+      skillElement.style.color = colorLight;
     });
 
-    footer.style.color = "#969696";
+    footer.style.color = colorLight;
 
     isDarkTheme = false;
   };

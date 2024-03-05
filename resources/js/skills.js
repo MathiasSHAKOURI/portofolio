@@ -29,7 +29,6 @@ skills.forEach(skill => {
     skillsContainer.appendChild(skillElement);
 });
 
-
 // Bloc Expérience
 const experiences = [
   { year: "2021-2024", position: "Administrateur système", company: "Modis", client: "Client BNP" },
@@ -71,12 +70,13 @@ skillsCategories.forEach(category => {
 
   category.skills.forEach(skill => {
       const skillElement = document.createElement("div");
-      skillElement.style.backgroundColor = "#ffffff";
-      skillElement.style.borderRadius = "50px";
+      skillElement.style.backgroundColor = "#fff";
+      skillElement.style.borderRadius = "15px";
       skillElement.style.marginBottom = "10px";
-      skillElement.style.padding = "5px";
+      skillElement.style.padding = "10px";
       skillElement.style.color = "#1b1f23";
       skillElement.style.textAlign = "center";
+      skillElement.classList.add("mx-3");
       skillElement.textContent = skill;
 
       categoryContainer.appendChild(skillElement);
