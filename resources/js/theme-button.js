@@ -8,6 +8,8 @@ const themeButton = document.getElementById("theme-button");
 const themeIcon = document.querySelector("#theme-button i");
 const goTopButton = document.getElementById("top-button");
 const modalContent = this.documentElement.querySelector(".modal-content");
+const footer = document.querySelector("footer div p");
+console.log(footer);
 
 
 themeButton.addEventListener("click", () => {
@@ -44,6 +46,8 @@ themeButton.addEventListener("click", () => {
       skillElement.style.color = "#1b1f23";
     });
 
+    footer.style.color = "#fff";
+
     isDarkTheme = true;
     return;
   };
@@ -78,6 +82,8 @@ themeButton.addEventListener("click", () => {
     skillTextElements.forEach(skillElement => {
       skillElement.style.color = "#969696";
     });
+
+    footer.style.color = "#969696";
 
     isDarkTheme = false;
   };

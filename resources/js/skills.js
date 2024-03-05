@@ -63,24 +63,6 @@ const skillsCategories = [
   }
 ];
 
-// const softSkillsContainer = document.getElementById("softSkillsContainer");
-
-// skillsCategories.forEach(category => {
-//     const categoryElement = document.createElement("div");
-//     categoryElement.classList.add("col-6");
-
-//     const listElement = document.createElement("ul");
-//     category.skills.forEach(skill => {
-//         const listItemElement = document.createElement("li");
-//         listItemElement.classList.add("px-3");
-//         listItemElement.textContent = skill;
-//         listElement.appendChild(listItemElement);
-//     });
-
-// categoryElement.appendChild(listElement);
-// softSkillsContainer.appendChild(categoryElement);
-// });
-
 const softSkillsContainer = document.getElementById("softSkillsContainer");
 
 skillsCategories.forEach(category => {
