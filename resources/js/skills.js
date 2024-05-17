@@ -88,6 +88,21 @@ skillsCategories.forEach(category => {
 // Bloc Projet Git
 const projects = [
     { 
+      name: "Easify",
+      image: "/resources/images/projects/agence-easify-project.png",
+      stack: "(PHP/JS natif)",
+      infoLink: "#",
+      githubLink: "https://www.agence-easify.fr/",
+      description: "Easify est une agence digitale dynamique fondée par trois associés passionnés. Nous offrons une gamme complète de services pour booster votre présence en ligne.<br><br>" +
+      "Nos expertises incluent :<br>" +
+      "- Développement web sur mesure<br>" +
+      "- Optimisation SEO et SEA<br>" +
+      "- Marketing digital<br>" +
+      "- Création d'identités de marque distinctives<br><br>" +
+      "Nous travaillons en étroite collaboration avec nos clients pour fournir des solutions innovantes et adaptées à leurs besoins spécifiques, visant à maximiser leur visibilité et leur impact sur le marché numérique.<br><br>" +
+      "<a href='https://www.agence-easify.fr/'>Voir le site ici</a>"
+    },
+    { 
       name: "OFIT",
       image: "/resources/images/projects/ofit-project.png",
       stack: "(PHP/Symfony/JS natif)",
@@ -149,7 +164,7 @@ projects.forEach(project => {
     projectElement.classList.add("col-6");
 
     const projectDetails = `
-    <div class="px-3 text-center">
+    <div class="px-3 pt-5 text-center">
       <img src="${project.image}" alt="${project.name}-project" class="img-fluid" id="image-project" height="50">
       <div class="pb-3">
         <p class="pt-3 fw-semibold mb-0">${project.name}</p>
